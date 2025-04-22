@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <div class="header-top">
+        <h1>Adriana Morera E</h1>
+        <button id="modo-oscuro" onclick="toggleModoOscuro()">Modo Oscuro</button>
+    </div>
+    <nav>
+        <ul>
+            <li><b><a href="#inicio">Inicio</a></b></li>
+            <li><b><a href="#educacion">Educación</a></b></li>
+            <li><b><a href="#habilidades">Habilidades</a></b></li>
+            <li><b><a href="#proyectos">Portafolio</a></b></li>
+            <li><b><a href="#contacto">Contacto</a></b></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    
+    <section id="inicio">
+        <h2>Conoceme!!!</h2>
+<p>Hola, soy Adriana Morera, estudiante de ingeniería en sistamas, que les puede decire de mí?</p>
+<p>Soy muy proactiva, me gusta siempre ayudar a los demás, me gusta estar reatndome a mí misma, me encantan los deportes y cocinar, fuí parte de clubes 4-S y garcias a eso soy una persona lider, me encanta trabajar en equipo y tambien puedo trabajar sola...</p>
+<p>En fin, eso es un poco de mí, ojala pronto me puedan conocer más!!!</p>
+    </section>
+    
+    <section id="educacion">
+        <h2>Educación y Experiencia</h2>
+        <H3>UNA Sede Nicoya</H3>
+        <p>Diplomado en ingeniería en sistamas. Jun 2024</p>
+        <H3>CTP de Hojancha</H3>
+        <p>Bachillerato en educaión. Dic 2021</p>
+        <H3>CTP de Hojancha</H3>
+        <p>Técnico medio en Informatica Empresarial. Dic 2021</p>
+    </section>
+    <div class="habilidades-container">
+    <section id="habilidades">
+        <h2>Habilidades Blandas</h2>
+        <li>Organización</li>
+        <li>Liderazgo</li>
+        <li>Compañerismo</li>
+        <li>Compromiso</li>
+        <li>Empatia</li>
+        <li>Responsabilidad</li>
+    </section>
+    <section id="habilidades">  
+                   <h2>Habilidades Técnicas</h2>
+                   <li>React</li>
+                   <li>C++</li>
+                   <li>Nest</li>
+                   <li>Next</li>
+                   <li>Figma</li>
+    </section>
+</div>
+
+<section id="Experiencia">
+<h2>Experiencia Laboral</h2>
+<H3>Liga Comunal del Agua</H3>
+<p>Durante dos años fui la persona encarga de supervisar y asegurar el funionamiento de los sistemas de la organización</p>
+<p>Enero 2021-Junio 2024</p>
+</section>
+
+<section id="Idiomas">
+<h2>Idiomas</h2>
+<H3>Español</H3>
+<p>Nativo</p>
+<H3>Ingles</H3>
+<p>B2</p>
+</section>
+
+<section id="proyectos">
+<h2>Portafolio</h2>
+<div class="proyectos-grid">
+    <div class="proyecto-card">
+        <img src="P1.png" alt="Proyecto 1">
+        <h3>ACV Web</h3>
+        <p>ACV Web es una pagina creada para el alquiler de casa vacacionaes en Cost rica, este sitio tiene la particularidad que es solo para casa, por ello nuestro publico meta son familias</p>
+        <a href="#" onclick="mostrarDetalles('acv')" class="btn-detalles">Más detalles</a>
+
+    </div>
+    <div class="proyecto-card">
+        <img src="p2.png" alt="Proyecto 2">
+        <h3>HOMELY</h3>
+        <p>HOMELY fue un ecommerce diseñado para vender todo tipo de productos del hogar a un muy buen precio, con la idea de evitarle la necesidad al cliente de salir de su hogar y con una entrega en menos de 3 dias.</p>
+        <a href="#" onclick="mostrarDetalles('homely')" class="btn-detalles">Más detalles</a>
+
+    </div>
+    <div class="proyecto-card">
+        <img src="p3.png" alt="Proyecto 3">
+        <h3>Nayuribe</h3>
+        <p>Nayuribe fue un poryecto de reserva de salas realizado para una biblioteca con el fin de prganizar mejor el ingreso y use de las personas a las mismas. Además de poder extraer estadisticas más puntuales.</p>
+        <a href="#" onclick="mostrarDetalles('nayuribe')" class="btn-detalles">Más detalles</a>
+
+    </div>
+</div>
+</section>
+               
+    
+<section id="contacto">
+<h2>Contacto</h2>
+<form id="formulario-contacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+               
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required><br><br>
+               
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+</section>
+               
+    
+    <script src="JS/script.js"></script>
+</body>
+
+<div id="modal-detalles" class="modal oculto">
+  <div class="contenido-modal">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <div id="contenido-detalles"></div>
+  </div>
+</div>
+
+</html>
